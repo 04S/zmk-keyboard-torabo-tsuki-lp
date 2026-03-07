@@ -70,11 +70,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kt LEFT_GUI  &kp LEFT_GUI  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kt LEFT_GUI  &kp LEFT_GUI  &kp LEFT_GUI  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans  &trans
             >;
         };
     };
