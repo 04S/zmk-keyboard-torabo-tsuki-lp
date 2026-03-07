@@ -20,8 +20,6 @@
 
 pointing_listener: pointing_listener {
     compatible = "zmk,input-listener";
-    device = <&pointing_device>; // ラベル名は環境に合わせて調整してください
-    
-    /* オートマウスレイヤーの設定 */
+    device = <&pointing_device>;
     input-processors = <&zip_temp_layer 1 10000>;
 };
