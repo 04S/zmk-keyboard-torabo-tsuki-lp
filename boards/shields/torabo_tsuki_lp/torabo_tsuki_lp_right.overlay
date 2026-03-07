@@ -18,9 +18,8 @@
     col-offset = <7>;
 };
 
-#include <input/processors.dtsi>
 / {
-    trackball_listener: trackball_listener {
+    pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
