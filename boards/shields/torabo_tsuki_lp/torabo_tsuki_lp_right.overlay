@@ -20,7 +20,7 @@
 
 #include <input/processors.dtsi>
 / {
-    pointing_listene: pointing_listene {
+    pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
