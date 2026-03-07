@@ -90,8 +90,6 @@
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        device = <&pointing_device>;
-        input-processors = <&zip_temp_layer 1 10000>;
     };
 
     vbatt: vbatt {
