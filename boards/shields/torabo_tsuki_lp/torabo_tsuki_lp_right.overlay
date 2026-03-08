@@ -2,7 +2,11 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&pointing_listener {j
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+&pointing_listener {
     status = "okay";
     compatible = "zmk,input-listener";
     device = <&pointing_device>;
