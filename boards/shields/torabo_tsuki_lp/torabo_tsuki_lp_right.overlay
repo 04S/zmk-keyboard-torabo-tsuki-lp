@@ -7,7 +7,7 @@
     compatible = "zmk,input-listener";
     device = <&pointing_device>;
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                       <&zip_temp_layer 4 500>;j
+                       <&zip_temp_layer 4 500>;
     scroller {
         layers = <5>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
