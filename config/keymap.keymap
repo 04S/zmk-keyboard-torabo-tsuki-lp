@@ -36,11 +36,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans      &trans      &trans        &trans      &trans                                                         &trans             &trans      &trans      &trans      &trans         &trans
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                                                     &kp LS(N6)         &kp LS(N7)  &kp MINUS   &kp PLUS    &kp BACKSLASH  &trans
-&trans  &kp N1      &kp N2      &kp N3        &kp N4      &kp N5            &trans                &trans                 &kp N6             &kp N7      &kp N8      &kp N9      &kp NUMBER_0   &trans
-&trans  &trans      &none       &kp ASTERISK  &kp SLASH   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp EQUAL   &kp LS(N8)  &kp LS(N9)  &trans         &trans
-&trans  &trans      &trans      &trans        &trans      &trans            &trans                &trans                 &trans             &trans      &trans      &trans      &trans         &trans
+&trans  &trans      &trans      &trans      &trans      &trans                                                         &trans             &trans      &trans      &trans      &trans         &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                                     &kp LS(N6)         &kp LS(N7)  &kp MINUS   &kp PLUS    &kp BACKSLASH  &trans
+&trans  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5            &trans                &trans                 &kp N6             &kp N7      &kp N8      &kp N9      &kp NUMBER_0   &trans
+&trans  &trans      &none       &none       &kp SLASH   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp EQUAL   &kp LS(N8)  &kp LS(N9)  &trans         &trans
+&trans  &trans      &trans      &trans      &trans      &trans            &trans                &trans                 &trans             &trans      &trans      &trans      &trans         &trans
             >;
         };
 
