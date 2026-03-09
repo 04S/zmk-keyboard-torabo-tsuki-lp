@@ -3,16 +3,13 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
-};
-
-&zip_temp_layer {
     excluded-positions = <
         20 // I
         33 // J
         34 // K
         35 // L
     >;
+    require-prior-idle-ms = <200>;
 };
 
 &pointing_listener {
