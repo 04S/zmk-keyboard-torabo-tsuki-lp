@@ -2,8 +2,17 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+/ &zip_temp_layer {
+/     require-prior-idle-ms = <200>;
+/ };
+
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    excluded-positions = <
+        20 // I
+        33 // J
+        34 // K
+        35 // L
+    >;
 };
 
 &pointing_listener {
