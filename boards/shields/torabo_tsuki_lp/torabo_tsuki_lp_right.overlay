@@ -6,15 +6,6 @@
     require-prior-idle-ms = <200>;
 };
 
-&zip_temp_layer {
-    excluded-positions = <
-        20
-        33
-        34
-        35
-    >;
-};
-
 &pointing_listener {
     status = "okay";
     compatible = "zmk,input-listener";
