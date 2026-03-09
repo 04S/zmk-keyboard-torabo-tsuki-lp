@@ -4,12 +4,3 @@
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 4 250>;
 };
-
-&zip_temp_layer {
-    excluded-positions = <
-        20 // I
-        33 // J
-        34 // K
-        35 // L
-    >;
-};
