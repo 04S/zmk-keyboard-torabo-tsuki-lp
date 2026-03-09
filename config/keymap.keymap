@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -59,11 +60,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans          &trans         &trans         &trans                            &trans          &trans          &trans           &trans           &trans      &trans
-&trans  &kp PLUS          &kp EQUAL       &kp LS(0x89)   &kp F4         &kp F5                            &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
-&trans  &kp MINUS         &kp EQUAL       &kp 0x89       &kp SEMICOLON  &kp SINGLE_QUOTE  &trans  &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
-&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)   &underscoer    &bt BT_NXT        &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
-&trans  &trans            &trans          &trans         &trans         &trans            &trans  &trans  &trans          &trans          &trans           &trans           &trans      &trans
+&trans  &trans            &trans          &trans        &trans             &trans                                      &trans          &trans          &trans           &trans           &trans      &trans
+&trans  &kp LS(MINUS)     &kp LS(EQUAL)   &kp LS(0x89)  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                        &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
+&trans  &kp MINUS         &kp EQUAL       &kp 0x89      &kp SEMICOLON      &kp SINGLE_QUOTE      &trans        &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
+&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)  &bt BT_NXT         &out OUT_BLE          &out OUT_USB  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
+&trans  &trans            &trans          &trans        &trans             &trans                &trans        &trans  &trans          &trans          &trans           &trans           &trans      &trans
             >;
         };
 
