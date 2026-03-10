@@ -13,6 +13,11 @@
             key-positions = <63 64>;
             layers = <0>;
         };
+
+        test {
+            bindings = <&kp B>;
+            key-positions = <49 50>;
+        };
     };
 
     macros {
@@ -52,7 +57,7 @@
 &trans  &trans            &trans          &trans        &trans             &trans                                      &trans          &trans          &trans           &trans           &trans      &trans
 &trans  &kp LS(MINUS)     &kp LS(EQUAL)   &kp LS(0x89)  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                        &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
 &trans  &kp MINUS         &kp EQUAL       &kp 0x89      &kp SEMICOLON      &kp SINGLE_QUOTE      &trans        &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
-&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)  &bt BT_NXT         &out OUT_BLE          &out OUT_USB  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
+&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)  &bt BT_CLR_ALL     &out OUT_BLE          &out OUT_USB  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
 &trans  &trans            &trans          &trans        &trans             &trans                &trans        &trans  &trans          &trans          &trans           &trans           &trans      &trans
             >;
         };
