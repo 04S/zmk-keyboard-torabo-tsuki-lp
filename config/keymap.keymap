@@ -34,11 +34,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans     &trans    &trans    &trans        &trans                                                  &trans       &trans  &trans     &trans          &trans          &trans
-&trans  &kp Q      &kp W     &kp E     &kp R         &kp T                                                   &kp Y        &kp U   &kp I      &kp O           &kp P           &trans
-&trans  &kp A      &kp S     &kp D     &kp F         &kp G      &trans                &trans                 &kp H        &kp J   &kp K      &kp L           &kp MINUS       &trans
-&trans  &kp Z      &kp X     &kp C     &kp V         &kp B      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N        &kp M   &kp COMMA  &kp DOT         &kp SLASH       &trans
-&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 DELETE  &kp SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE          &lt 2 ENTER  &trans  &trans     &kp LANGUAGE_1  &kp LANGUAGE_2  &trans
+&trans  &trans     &trans    &trans    &trans        &trans                                                      &trans       &trans  &trans     &trans          &trans          &trans
+&trans  &kp Q      &kp W     &kp E     &kp R         &kp T                                                       &kp Y        &kp U   &kp I      &kp O           &kp P           &trans
+&trans  &kp A      &kp S     &kp D     &kp F         &kp G      &trans                &trans                     &kp H        &kp J   &kp K      &kp L           &kp MINUS       &trans
+&trans  &kp Z      &kp X     &kp C     &kp V         &kp B      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp N        &kp M   &kp COMMA  &kp DOT         &kp SLASH       &trans
+&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 DELETE  &kp SPACE  &mt LEFT_SHIFT TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 2 ENTER  &trans  &trans     &kp LANGUAGE_1  &kp LANGUAGE_2  &trans
             >;
         };
 
@@ -54,21 +54,21 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans          &trans        &trans             &trans                                         &trans          &trans          &trans           &trans           &trans      &trans
-&trans  &kp LS(MINUS)     &kp LS(EQUAL)   &kp LS(0x89)  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                           &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
-&trans  &kp MINUS         &kp EQUAL       &kp 0x89      &kp SEMICOLON      &kp SINGLE_QUOTE      &trans        &trans     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
-&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)  &bt BT_CLR_ALL     &out OUT_BLE          &out OUT_USB  &lt 3 F24  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
-&trans  &trans            &trans          &trans        &trans             &trans                &trans        &trans     &trans          &trans          &trans           &trans           &trans      &trans
+&trans  &trans            &trans          &trans        &trans             &trans                                   &trans          &trans          &trans           &trans           &trans      &trans
+&trans  &kp LS(MINUS)     &kp LS(EQUAL)   &kp LS(0x89)  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                     &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
+&trans  &kp MINUS         &kp EQUAL       &kp 0x89      &kp SEMICOLON      &kp SINGLE_QUOTE      &trans  &trans     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
+&trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LS(0x87)  &none              &none                 &none   &lt 3 F24  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
+&trans  &trans            &trans          &trans        &trans             &trans                &trans  &trans     &trans          &trans          &trans           &trans           &trans      &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &out OUT_BLE  &out OUT_USB  &trans        &kp A         &bt BT_CLR                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &out OUT_BLE  &out OUT_USB  &trans        &bt BT_CLR_ALL  &bt BT_CLR                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
