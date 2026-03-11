@@ -34,42 +34,6 @@
             timeout-ms = <50>;
             layers = <0>;
         };
-
-        C_BKSP {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        C_DEL {
-            bindings = <&kp DELETE>;
-            key-positions = <12 13>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        C_COLON {
-            bindings = <&kp LS(SINGLE_QUOTE)>;
-            key-positions = <6 7>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        C_SEMICOLON {
-            bindings = <&kp LS(SEMICOLON)>;
-            key-positions = <28 29>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        C_DOUBLE_QUOTES {
-            bindings = <&kp LS(NUMBER_2)>;
-            key-positions = <7 8>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
     };
 
     macros {
@@ -86,11 +50,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans     &trans    &trans    &trans        &trans                                           &trans       &trans  &trans     &trans         &trans             &trans
-&trans  &kp Q      &kp W     &kp E     &kp R         &kp T                                            &kp Y        &kp U   &kp I      &kp O          &kp P              &trans
-&trans  &kp A      &kp S     &kp D     &kp F         &kp G      &trans              &trans            &kp H        &kp J   &kp K      &kp L          &kp MINUS          &trans
-&trans  &kp Z      &kp X     &kp C     &kp V         &kp B      &kp LS(NUMBER_8)    &kp LS(NUMBER_9)  &kp N        &kp M   &kp COMMA  &kp DOT        &kp SLASH          &trans
-&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 DELETE  &kp SPACE  &mt LEFT_SHIFT TAB  &kp RIGHT_SHIFT   &lt 2 ENTER  &trans  &trans     &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
+&trans  &trans     &trans    &trans    &trans     &trans                                           &trans       &trans  &trans     &trans         &trans             &trans
+&trans  &kp Q      &kp W     &kp E     &kp R      &kp T                                            &kp Y        &kp U   &kp I      &kp O          &kp P              &trans
+&trans  &kp A      &kp S     &kp D     &kp F      &kp G      &trans              &trans            &kp H        &kp J   &kp K      &kp L          &kp MINUS          &trans
+&trans  &kp Z      &kp X     &kp C     &kp V      &kp B      &kp LS(NUMBER_8)    &kp LS(NUMBER_9)  &kp N        &kp M   &kp COMMA  &kp DOT        &kp SLASH          &trans
+&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 F24  &kp SPACE  &mt LEFT_SHIFT TAB  &kp RIGHT_SHIFT   &lt 2 ENTER  &trans  &trans     &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
             >;
         };
 
