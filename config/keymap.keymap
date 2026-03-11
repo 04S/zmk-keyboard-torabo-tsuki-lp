@@ -8,28 +8,28 @@
     combos {
         compatible = "zmk,combos";
 
-        ABC {
+        C_ABC {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <21 22>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        KANA {
+        C_KANA {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <29 30>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        ESC {
+        C_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        Scroll {
+        C_Scroll {
             bindings = <&lt 5 F24>;
             key-positions = <17 18>;
             timeout-ms = <50>;
