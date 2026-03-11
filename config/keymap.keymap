@@ -30,7 +30,7 @@
         };
 
         Scroll {
-            bindings = <&lt 5>;
+            bindings = <&lt 5 F24>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
