@@ -8,16 +8,17 @@
     combos {
         compatible = "zmk,combos";
 
-        layer_3 {
-            bindings = <&lt 3 F24>;
-            key-positions = <63 64>;
+        ABC {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <21 22>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
-        test {
-            bindings = <&kp B>;
-            key-positions = <0 1>;
-            timeout-ms = <150>;
+        KANA {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <29 30>;
+            timeout-ms = <100>;
             layers = <0>;
         };
     };
