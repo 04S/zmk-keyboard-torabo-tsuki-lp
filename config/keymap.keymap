@@ -35,6 +35,36 @@
             timeout-ms = <50>;
         };
 
+        C_BKSP {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+        };
+
+        C_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+        };
+
+        C_COLON {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <27 28>;
+            timeout-ms = <50>;
+        };
+
+        C_SEMICOLON {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+        };
+
+        C_DOUBLE_QUOTES {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+        };
+
     };
 
     macros {
