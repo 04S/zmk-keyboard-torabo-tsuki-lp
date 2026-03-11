@@ -93,21 +93,21 @@
 
         layer_1 {
             bindings = <
-&trans  &trans       &trans     &trans           &trans     &trans                    &trans  &trans     &trans      &trans  &trans        &trans
-&trans  &kp F1       &kp F2     &kp F3           &kp F4     &kp F5                    &kp F6  &kp F7     &kp F8      &kp F9  &kp F10       &trans
-&trans  &kp N1       &kp N2     &kp N3           &kp N4     &kp N5  &trans   &trans   &kp N6  &kp N7     &kp N8      &kp N9  &kp NUMBER_0  &trans
-&trans  &kp JP_PLUS  &kp MINUS  &kp JP_ASTERISK  &kp SLASH  &kp JP_EQUAL     &kp F11  &kp F12 &kp JP_COLON &kp COMMA  &kp PERIOD  &kp JP_LPAREN   &kp JP_RPAREN         &trans
-&trans  &trans       &trans     &trans           &trans     &trans  &trans   &trans   &trans  &trans     &trans      &trans  &trans        &trans
+&trans  &trans       &trans     &trans           &trans     &trans                          &trans        &trans  &trans  &trans  &trans        &trans
+&trans  &kp F1       &kp F2     &kp F3           &kp F4     &kp F5                          &kp F6        &kp F7  &kp F8  &kp F9  &kp F10       &trans
+&trans  &kp N1       &kp N2     &kp N3           &kp N4     &kp N5        &trans   &trans   &kp N6        &kp N7  &kp N8  &kp N9  &kp NUMBER_0  &trans
+&trans  &kp JP_PLUS  &kp MINUS  &kp JP_ASTERISK  &kp SLASH  &kp JP_EQUAL  &kp F11  &kp F12  &kp JP_COLON  &trans  &trans  &trans  &trans        &trans
+&trans  &trans       &trans     &trans           &trans     &trans        &trans   &trans   &trans        &trans  &trans  &trans  &trans        &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans          &trans        &trans             &trans                                   &trans          &trans          &trans           &trans           &trans      &trans
-&trans  &kp LS(MINUS)     &kp LS(EQUAL)   &kp LS(0x89)  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                     &mkp MB4        &mkp MB5        &kp ESCAPE       &kp PRINTSCREEN  &kp INSERT  &trans
-&trans  &kp MINUS         &kp JP_DQUOTE       &kp 0x89      &kp SEMICOLON      &kp SINGLE_QUOTE      &trans  &trans     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME         &kp END     &trans
-&trans  &kp JP_PLUS  &kp MINUS  &kp JP_ASTERISK  &kp SLASH  &none              &none                 &none   &lt 3 F24  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE  &trans
-&trans  &trans            &trans          &trans        &trans             &trans                &trans  &trans     &trans          &trans          &trans           &trans           &trans      &trans
+&trans  &trans         &trans         &trans           &trans             &trans                                &trans       &trans          &trans          &trans           &trans         &trans
+&trans  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(0x89)     &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)                  &mkp MB4     &mkp MB5        &kp ESCAPE      &kp PRINTSCREEN  &kp INSERT     &trans
+&trans  &kp MINUS      &kp JP_DQUOTE  &kp 0x89         &kp SEMICOLON      &kp SINGLE_QUOTE      &trans  &trans  &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN   &kp HOME         &kp END        &trans
+&trans  &kp JP_PLUS    &kp MINUS      &kp JP_ASTERISK  &kp SLASH          &none                 &none   &none   &lt 3 F24    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp DELETE
+&trans  &trans         &trans         &trans           &trans             &trans                &trans  &trans  &trans       &trans          &trans          &trans           &trans         &trans
             >;
         };
 
