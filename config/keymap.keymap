@@ -18,7 +18,6 @@
             bindings = <&kp B>;
             key-positions = <28 29>;
             timeout-ms = <150>;
-            slow-release;
             layers = <0>;
         };
     };
