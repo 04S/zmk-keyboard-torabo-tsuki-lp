@@ -16,7 +16,7 @@
 
         test {
             bindings = <&kp B>;
-            key-positions = <28 29>;
+            key-positions = <0 1>;
             timeout-ms = <150>;
             layers = <0>;
         };
