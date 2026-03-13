@@ -115,7 +115,7 @@
         Double_PAREN: Double_PAREN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F24 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp LEFT_ARROW>;
             label = "Double_PAREN";
         };
     };
