@@ -63,10 +63,10 @@
     };
 
     macros {
-        underscoer: underscoer {
+        Double_PAREN: underscoer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "UNDERSCOER";
         };
     };
@@ -76,11 +76,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans                                             &trans       &trans  &trans     &trans         &trans             &trans
-&trans  &kp Q      &kp W     &kp E     &kp R      &kp T                                              &kp Y        &kp U   &kp I      &kp O          &kp P              &trans
-&trans  &lt 3 A    &kp S     &kp D     &kp F      &kp G        &trans              &trans            &kp H        &kp J   &kp K      &kp L          &lt 3 MINUS        &trans
-&trans  &kp Z      &kp X     &kp C     &kp V      &kp B        &kp LS(NUMBER_8)    &kp LS(NUMBER_9)  &kp N        &kp M   &kp COMMA  &kp DOT        &kp SLASH          &trans
-&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 2 F24  &lt 1 SPACE  &mt LEFT_SHIFT TAB  &kp RIGHT_SHIFT   &lt 3 ENTER  &trans  &trans     &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
+&trans  &trans     &trans    &trans    &trans     &trans                                                    &trans       &trans  &trans     &trans         &trans             &trans
+&trans  &kp Q      &kp W     &kp E     &kp R      &kp T                                                     &kp Y        &kp U   &kp I      &kp O          &kp P              &trans
+&trans  &lt 3 A    &kp S     &kp D     &kp F      &kp G        &trans                  &trans               &kp H        &kp J   &kp K      &kp L          &lt 3 MINUS        &trans
+&trans  &kp Z      &kp X     &kp C     &kp V      &kp B        &kp LS(NUMBER_8)        &kp LS(NUMBER_9)     &kp N        &kp M   &kp COMMA  &kp DOT        &kp SLASH          &trans
+&trans  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 F24  &lt 1 SPACE  &mt LEFT_SHIFT LS(TAB)  &mt RIGHT_SHIFT TAB  &lt 2 ENTER  &trans  &trans     &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
             >;
         };
 
@@ -96,20 +96,20 @@
 
         layer_2 {
             bindings = <
-&trans  &trans           &trans         &trans           &trans      &trans                        &trans            &trans            &trans           &trans           &trans             &trans
-&trans  &none            &none          &none            &none       &none                         &kp JP_CARET      &kp JP_BACKQUOTE  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_AT          &trans
-&trans  &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH         &kp DOLLAR  &kp PERCENT   &trans  &trans  &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE  &trans
-&trans  &kp JP_PLUS      &kp MINUS      &kp JP_ASTERISK  &kp SLASH   &kp JP_EQUAL  &none   &none   &kp JP_PIPE       &kp JP_TILDE      &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_YEN         &trans
-&trans  &trans           &trans         &trans           &trans      &trans        &trans  &trans  &trans            &trans            &trans           &trans           &trans             &trans
+&trans  &trans           &trans         &trans           &trans      &trans                           &trans            &trans            &trans           &trans           &trans             &trans
+&trans  &none            &none          &none            &none       &none                            &kp JP_CARET      &kp JP_BACKQUOTE  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_AT          &trans
+&trans  &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH         &kp DOLLAR  &kp PERCENT   &trans  &trans     &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE  &trans
+&trans  &kp JP_PLUS      &kp MINUS      &kp JP_ASTERISK  &kp SLASH   &kp JP_EQUAL  &none   &lt 6 F24  &kp JP_PIPE       &kp JP_TILDE      &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_YEN         &trans
+&trans  &trans           &trans         &trans           &trans      &trans        &trans  &trans     &trans            &trans            &trans           &trans           &trans             &trans
             >;
         };
 
         layer_3 {
             bindings = <
 &trans  &trans  &trans                  &trans       &trans                   &trans                  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &none   &kp LEFT_ALT            &kp LA(TAB)  &kp LA(LS(TAB))          &trans                  &kp INS   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none   &trans
-&trans  &trans  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT_ARROW))  &trans  &trans  &trans  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &none   &none                   &trans       &trans                   &trans  &none   &none   &mkp MB5  &kp HOME        &kp END         &none            &none   &trans
+&trans  &none   &none                   &none        &none                    &none                   &kp INS   &kp HOME        &kp END         &kp PRINTSCREEN  &none   &trans
+&trans  &none   &kp LEFT_ALT            &kp LA(TAB)  &kp LS(LA(TAB))          &none   &trans  &trans  &mkp MB5  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none   &trans
+&trans  &trans  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT_ARROW))  &none   &none   &none   &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans                  &trans       &trans                   &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans  &trans
             >;
         };
