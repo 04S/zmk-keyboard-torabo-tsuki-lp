@@ -8,8 +8,8 @@
     combos {
         compatible = "zmk,combos";
 
-        C_Scroll_DELETE {
-            bindings = <&lt 5 DELETE>;
+        C_DELETE {
+            bindings = <&mt DELETE>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
