@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-        combos {
+    combos {
         compatible = "zmk,combos";
 
         C_Scroll_DELETE {
@@ -70,7 +70,7 @@
 
         C_Double_PAREN {
             bindings = <&Double_PAREN>;
-            key-positions = <6 7>;
+            key-positions = <25 26>;
             timeout-ms = <50>;
             layers = <0>;
         };
