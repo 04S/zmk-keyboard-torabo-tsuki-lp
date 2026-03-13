@@ -112,15 +112,6 @@
     };
 
     macros {
-        underscoer: underscoer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp UNDER>;
-            label = "UNDERSCOER";
-        };
-    };
-
-    macros {
         Double_PAREN: underscoer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
