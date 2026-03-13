@@ -8,8 +8,8 @@
     combos {
         compatible = "zmk,combos";
 
-        C_Scroll {
-            bindings = <&lt 5 F24>;
+        C_Scroll_KANA {
+            bindings = <&lt 5 LANGUAGE_1>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
@@ -28,14 +28,7 @@
 
         C_ABC {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <21 22>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        C_KANA {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <29 30>;
+            key-positions = <11 12>;
             timeout-ms = <50>;
             layers = <0>;
         };
