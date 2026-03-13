@@ -106,11 +106,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans                  &trans           &trans                   &trans                  &trans    &trans          &trans          &trans           &trans  &trans
-&trans  &none   &kp LA(TAB)             &kp LA(LS(TAB))  &trans                   &trans                  &kp INS   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none   &trans
-&trans  &trans  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)      &kp LG(LC(RIGHT_ARROW))  &trans  &trans  &trans  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &none   &none                   &trans           &trans                   &trans  &none   &none   &mkp MB5  &kp HOME        &kp END         &none            &none   &trans
-&trans  &trans  &trans                  &trans           &trans                   &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans                  &trans       &trans                   &trans                  &trans    &trans          &trans          &trans           &trans  &trans
+&trans  &none   &kp LEFT_ALT            &kp LA(TAB)  &kp LA(LS(TAB))          &trans                  &kp INS   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none   &trans
+&trans  &trans  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT_ARROW))  &trans  &trans  &trans  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &none   &none                   &trans       &trans                   &trans  &none   &none   &mkp MB5  &kp HOME        &kp END         &none            &none   &trans
+&trans  &trans  &trans                  &trans       &trans                   &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans  &trans
             >;
         };
 
