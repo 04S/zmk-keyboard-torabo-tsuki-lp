@@ -9,7 +9,7 @@
         compatible = "zmk,combos";
 
         C_DELETE {
-            bindings = <&mt DELETE>;
+            bindings = <&kp DELETE>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
