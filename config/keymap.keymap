@@ -8,15 +8,15 @@
     combos {
         compatible = "zmk,combos";
 
-        C_DELETE {
-            bindings = <&kp DELETE>;
-            key-positions = <17 18>;
+        C_LCLK {
+            bindings = <&mkp LCLK>;
+            key-positions = <16 17>;
             timeout-ms = <50>;
         };
 
-        C_BACKSPACE {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
+        C_RCLK {
+            bindings = <&mkp RCLK>;
+            key-positions = <17 18>;
             timeout-ms = <50>;
         };
 
@@ -36,6 +36,13 @@
         C_ABC {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <11 12>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        C_SPACE {
+            bindings = <&kp SPACE>;
+            key-positions = <11 13>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -96,15 +103,15 @@
             layers = <0>;
         };
 
-        C_SEMICOLON {
-            bindings = <&kp SEMICOLON>;
+        C_BACKSPACE {
+            bindings = <&kp BACKSPACE>;
             key-positions = <28 29>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         C_COLON {
-            bindings = <&kp SINGLE_QUOTE >;
+            bindings = <&kp DELETE >;
             key-positions = <29 30>;
             timeout-ms = <50>;
             layers = <0>;
