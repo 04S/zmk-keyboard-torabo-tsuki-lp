@@ -105,6 +105,15 @@
         };
     };
 
+    macros {
+        Double_PAREN: Double_PAREN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp LEFT_ARROW>;
+            label = "Double_PAREN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
