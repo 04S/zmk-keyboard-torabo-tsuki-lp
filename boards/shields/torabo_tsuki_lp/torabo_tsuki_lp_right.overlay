@@ -16,10 +16,12 @@
     };
 };
 
-&spi0_default {
-    #binding-cells = <0>;
-};
+&pinctrl {
+    spi0_default: spi0_default {
+        #binding-cells = <0>;
+    };
 
-&spi0_sleep {
-    #binding-cells = <0>;
+    spi0_sleep: spi0_sleep {
+        #binding-cells = <0>;
+    };
 };
