@@ -2,6 +2,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <mouse-gesture.dtsi>
+#include <dt-bindings/zmk/mouse_gesture.h>
 
 &pointing_listener {
     status = "okay";
