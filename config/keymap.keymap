@@ -186,11 +186,5 @@
 &trans  &trans        &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
-
-        default_layer {
-            bindings = <
-&mouse_gesture  &mouse_gesture_on  &mouse_gesture_off  &mouse_gesture_toggle  &mouse_gesture_kp 0 A  &mouse_gesture_mkp 0 RCLK
-            >;
-        };
     };
 };
