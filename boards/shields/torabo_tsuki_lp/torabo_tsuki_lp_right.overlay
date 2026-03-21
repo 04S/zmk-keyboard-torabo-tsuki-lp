@@ -22,3 +22,11 @@
 
     input-processors = <&zip_mouse_gesture>;
 };
+
+&spi0_default {
+    #binding-cells = <0>;
+};
+
+&spi0_sleep {
+    #binding-cells = <0>;
+};
