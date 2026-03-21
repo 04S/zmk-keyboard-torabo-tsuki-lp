@@ -1,3 +1,34 @@
+/ {
+    // ジェスチャーパターンの定義
+    &zip_mouse_gesture {
+        stroke-size = <300>;
+        enable-eager-mode;
+
+        gesture_back {
+            pattern = <3>; // 右
+            bindings = <&kp LA(LEFT)>;
+        };
+
+        gesture_forward {
+            pattern = <2>; // 左
+            bindings = <&kp LA(RIGHT)>;
+        };
+        
+        // 必要に応じて上下などを追加
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+                // ジェスチャーを起動するキーを配置（例：特定のキーを押している間だけ有効）
+                &mouse_gesture
+                // ... 他のキー ...
+            >;
+        };
+    };
+};
+
 // OS設定を日本語キーボードのまま使用するための変換定義
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
