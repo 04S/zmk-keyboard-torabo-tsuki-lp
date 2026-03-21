@@ -1,6 +1,7 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <mouse-gesture.dtsi>
 
 &pointing_listener {
     status = "okay";
@@ -24,25 +25,6 @@
 
 &size_l_transform {
     col-offset = <7>;
-};
-
-#include <mouse-gesture.dtsi>
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                &mouse_gesture // Activates mouse gesture while it is pressed
-                &mouse_gesture_on // Activates mouse gesture on each press
-                &mouse_gesture_off // Deactivates mouse gesture on each press
-                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
-                &mouse_gesture_kp A // Activates mouse gesture while held, and triggers &kp A on tap
-                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
-            >;
-        };
-    };
 };
 
 &zip_mouse_gesture {
