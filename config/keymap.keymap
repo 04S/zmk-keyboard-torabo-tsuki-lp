@@ -3,8 +3,34 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/mouse_gesture.h>
 
 / {
+    // ジェスチャーの定義
+    mg_move_bindings: mg_move_bindings {
+        compatible = "zmk,mouse-gesture-move-bindings";
+        move-up = <&kp PAGE_UP>;
+        move-down = <&kp PAGE_DOWN>;
+        move-left = <&kp LA(LEFT)>;  // ブラウザ戻る
+        move-right = <&kp LA(RIGHT)>; // ブラウザ進む
+    };
+
+    mouse_gesture: mouse_gesture {
+        compatible = "zmk,mouse-gesture";
+        #binding-cells = <0>;
+        move-threshold = <10>; // 判定の感度
+        bindings = <&mg_move_bindings>;
+    };
+
+    // ジェスチャーをON/OFFするスイッチの定義
+    behaviors {
+        tg_mg: toggle_mouse_gesture {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&none>, <&mouse_gesture>, <&none>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -184,6 +210,17 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans          &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+Gesture {
+            bindings = <
+                &mouse_gesture // Activates mouse gesture while it is pressed
+                &mouse_gesture_on // Activates mouse gesture on each press
+                &mouse_gesture_off // Deactivates mouse gesture on each press
+                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
+                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
+                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
             >;
         };
     };
