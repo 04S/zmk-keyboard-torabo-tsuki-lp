@@ -15,16 +15,3 @@
                            <&zip_xy_to_scroll_mapper>;
     };
 };
-
-/ {
-    soc {
-        pin-controller@40000000 {
-            spi0_default: spi0_default {
-                #binding-cells = <0>;
-            };
-            spi0_sleep: spi0_sleep {
-                #binding-cells = <0>;
-            };
-        };
-    };
-};
