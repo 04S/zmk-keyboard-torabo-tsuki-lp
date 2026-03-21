@@ -33,22 +33,22 @@
     enable-eager-mode; // Optional, but recommended
 
     history_back {
-        pattern = <GESTURE_RIGHT>;
+        pattern = <3>;
         bindings = <&kp LA(LEFT)>;
     };
 
     history_forward {
-        pattern = <GESTURE_LEFT>;
+        pattern = <2>;
         bindings = <&kp LA(RIGHT)>;
     };
 
     close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        pattern = <1 3>;
         bindings = <&kp LC(W)>;
     };
 
     new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        pattern = <1 2>;
         bindings = <&kp LC(T)>;
     };
 };
