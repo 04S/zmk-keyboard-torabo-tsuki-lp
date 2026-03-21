@@ -7,7 +7,8 @@
     status = "okay";
     compatible = "zmk,input-listener";
     device = <&pointing_device>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>
+                        <&zip_mouse_gesture>;
     scroller {
         layers = <5>;
         input-processors = <&zip_xy_scaler 1 20>,
@@ -25,4 +26,31 @@
 
 &size_l_transform {
     col-offset = <7>;
+};
+
+#include <mouse-gesture.dtsi>
+
+&zip_mouse_gesture {
+    stroke-size = <300>; // Optional (default: 200)
+    enable-eager-mode; // Optional, but recommended
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
 };
