@@ -15,3 +15,11 @@
                            <&zip_xy_to_scroll_mapper>;
     };
 };
+
+&spi0_default {
+    #binding-cells = <0>;
+};
+
+&spi0_sleep {
+    #binding-cells = <0>;
+};
