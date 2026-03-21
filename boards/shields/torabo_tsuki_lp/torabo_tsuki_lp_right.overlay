@@ -1,14 +1,12 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <mouse-gesture.dtsi>
 
 &pointing_listener {
     status = "okay";
     compatible = "zmk,input-listener";
     device = <&pointing_device>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                        <&zip_mouse_gesture>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     scroller {
         layers = <5>;
         input-processors = <&zip_xy_scaler 1 20>,
@@ -26,29 +24,4 @@
 
 &size_l_transform {
     col-offset = <7>;
-};
-
-&zip_mouse_gesture {
-    stroke-size = <300>; // Optional (default: 200)
-    enable-eager-mode; // Optional, but recommended
-
-    history_back {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp A>;
-    };
-
-    history_forward {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp B>;
-    };
-
-    close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp C>;
-    };
-
-    new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp D>;
-    };
 };
