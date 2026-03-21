@@ -36,21 +36,21 @@
 
     history_back {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(LEFT)>;
+        bindings = <&kp A>;
     };
 
     history_forward {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(RIGHT)>;
+        bindings = <&kp B>;
     };
 
     close_tab {
         pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(W)>;
+        bindings = <&kp C>;
     };
 
     new_tab {
         pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(T)>;
+        bindings = <&kp D>;
     };
 };
