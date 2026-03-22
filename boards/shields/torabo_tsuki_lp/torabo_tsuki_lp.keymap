@@ -24,30 +24,3 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 
 #include "../../../config/keymap.keymap"
-
-
-
-
-#include <zmk,layer-listeners.yaml>
-
-/ {
-    // スニペットが探している「受け皿」を定義
-    layer_listeners: layer_listeners {
-        compatible = "zmk,input-listener";
-        status = "okay";
-    };
-
-    keymap {
-        // ... 既存のレイヤー定義（layer_0, layer_1...） ...
-    };
-}; // ← ここで keymap やルートノードの { } がすべて閉じられます
-
-// ★★★ 2. の記述はこの「外側」に書きます ★★★
-&layer_listeners {
-    scroll_layer {
-        layers = <5>; // スクロールにしたいレイヤー番号
-        input-processors = <&zip_xy_scaler 1 20>, <&zip_xy_to_scroll_mapper>;
-    };
-    
-    // 他のレイヤー設定が必要ならここに追加していく
-};
