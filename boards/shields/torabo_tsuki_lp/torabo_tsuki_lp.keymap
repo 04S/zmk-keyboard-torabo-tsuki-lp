@@ -25,33 +25,23 @@
 
 #include "../../../config/keymap.keymap"
 
-/ {
-    // ジェスチャーパターンの定義
-    &zip_mouse_gesture {
-        stroke-size = <300>;
-        enable-eager-mode;
+&zip_mouse_gesture {
+    stroke-size = <300>;
+    enable-eager-mode;
 
-        gesture_back {
-            pattern = <3>; // 右
-            bindings = <&kp LA(LEFT)>;
-        };
-
-        gesture_forward {
-            pattern = <2>; // 左
-            bindings = <&kp LA(RIGHT)>;
-        };
-        
-        // 必要に応じて上下などを追加
+    gesture_back {
+        pattern = <3>; // 右
+        bindings = <&kp LA(LEFT)>;
     };
 
-    &keymap {
-        compatible = "zmk,keymap";
-        default_layer {
-            bindings = <
-                // ジェスチャーを起動するキーを配置（例：特定のキーを押している間だけ有効）
-                &mouse_gesture
-                // ... 他のキー ...
-            >;
-        };
+    gesture_forward {
+        pattern = <2>; // 左
+        bindings = <&kp LA(RIGHT)>;
     };
+};
+
+// 4. キーマップへの追加が必要な場合も、参照形式で行う
+&keymap {
+    // ここでエラーが出る場合は、一旦この &keymap ブロック全体を消して試してください
+};
 };
