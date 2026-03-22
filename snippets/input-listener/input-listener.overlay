@@ -28,7 +28,7 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <16 17 18 28 29>;    // AML除外定義
+    excluded-positions = <16 17 18 19 28 29>;    // AML除外定義
     require-prior-idle-ms = <200>;           // AML誤爆防止
 };
 
