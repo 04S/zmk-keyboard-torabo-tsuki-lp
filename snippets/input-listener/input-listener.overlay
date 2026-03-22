@@ -41,7 +41,7 @@
                         <&zip_mouse_gesture>;        // マウスジェスチャー用
     scroller {
         layers = <5>;
-        input-processors = <&zip_xy_scaler 1 20>,
+        input-processors = <&zip_xy_scaler 1 30>,
                            <&zip_xy_to_scroll_mapper>;
     };
 };
