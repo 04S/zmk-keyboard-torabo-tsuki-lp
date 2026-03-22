@@ -6,22 +6,22 @@
 
     history_back {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp N1>;
+        bindings = <&kp LC(LG(RIGHT_ARROW));
     };
 
     history_forward {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp N2>;
+        bindings = <&kp LC(LG(LEFT_ARROW))>;
     };
 
     close_tab {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp N3>;
+        bindings = <&kp LG(TAB)>;
     };
 
     new_tab {
         pattern = <GESTURE_UP>;
-        bindings = <&kp N4>;
+        bindings = <&kp LG(TAB)>;
     };
 };
 
