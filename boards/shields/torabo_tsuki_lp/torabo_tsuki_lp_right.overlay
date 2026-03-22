@@ -1,7 +1,7 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <mouse-gesture.dtsi>
+// #include <mouse-gesture.dtsi>
 
 // &zip_mouse_gesture {
 //     stroke-size = <300>; // Optional (default: 200)
