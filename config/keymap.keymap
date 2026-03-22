@@ -120,7 +120,7 @@
         layer_0 {
             bindings = <
 &trans  &trans     &trans    &trans    &trans       &trans                                                     &trans            &trans  &trans     &trans         &trans             &trans
-&trans  &kp Q      &kp W     &kp E     &kp R        &kp T                                                      &kp Y             &kp U   &mouse_gesture_kp 0 I      &kp O          &kp P              &trans
+&trans  &kp Q      &kp W     &kp E     &kp R        &kp T                                                      &kp Y             &kp U   &mouse_gesture      &kp O          &kp P              &trans
 &trans  &kp A      &kp S     &kp D     &kp F        &kp G             &trans              &trans               &kp H             &kp J   &kp K      &lt 5 L        &kp MINUS          &trans
 &trans  &lt 3 Z    &kp X     &kp C     &kp V        &kp B             &kp LS(NUMBER_8)    &kp LS(NUMBER_9)     &kp N             &kp M   &kp COMMA  &kp DOT        &lt 3 SLASH        &trans
 &trans  &kp LCTRL  &kp LGUI  &kp LALT  &kp LA(TAB)  &lt 1 LANGUAGE_2  &mt LEFT_SHIFT TAB  &mt RIGHT_SHIFT TAB  &lt 2 LANGUAGE_1  &trans  &trans     &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
