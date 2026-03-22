@@ -1,5 +1,4 @@
 #include <mouse-gesture.dtsi>
-#include <zmk-listeners.dtsi>
 
 &zip_mouse_gesture {
     stroke-size = <100>; // Optional (default: 200)
@@ -37,19 +36,5 @@
         layers = <5>;
         input-processors = <&zip_xy_scaler 1 20>,
                            <&zip_xy_to_scroll_mapper>;
-    };
-};
-
-&layer_listeners {
-    compatible = "zmk,layer-listeners";
-
-    nav_num_feedback {
-        layers = <1>;
-        bindings = <&mouse_gesture_on &mouse_gesture_off>;
-    };
-
-    nav_reset {
-        layers = <1>;
-        bindings = <&none &reset_nav>;
     };
 };
