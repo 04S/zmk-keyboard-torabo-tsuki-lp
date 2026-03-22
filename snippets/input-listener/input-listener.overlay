@@ -40,6 +40,6 @@
 
     mouse_gesture {
         layers = <2>;
-        input-processors = <&zip_mouse_gesture>;
+        input-processors = <&mouse_gesture>;
     };
 };
