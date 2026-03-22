@@ -3,6 +3,7 @@
 &zip_mouse_gesture {
     stroke-size = <100>; // Optional (default: 200)
     enable-eager-mode; // Optional, but recommended
+    gesture-cooldown-ms = <200>;
 
     history_back {
         pattern = <GESTURE_RIGHT>;
