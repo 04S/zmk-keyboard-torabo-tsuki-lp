@@ -26,6 +26,7 @@
 };
 
 &pointing_listener {
-     status = "okay";
-     device = <&pointing_device>;
+    status = "okay";
+    device = <&pointing_device>;
+    input-processors = <&zip_mouse_gesture>;
 };
