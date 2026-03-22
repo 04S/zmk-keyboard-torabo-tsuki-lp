@@ -3,22 +3,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 // #include <mouse-gesture.dtsi>
 
-&pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-};
-
-&size_s_transform {
-    col-offset = <7>;
-};
-
-&size_m_transform {
-    col-offset = <7>;
-};
-
-&size_l_transform {
-    col-offset = <7>;
-};
-
 // &zip_mouse_gesture {
 //     stroke-size = <300>; // Optional (default: 200)
 //     enable-eager-mode; // Optional, but recommended
@@ -54,4 +38,17 @@
         input-processors = <&zip_xy_scaler 1 20>,
                            <&zip_xy_to_scroll_mapper>;
     };
+};
+
+
+&size_s_transform {
+    col-offset = <7>;
+};
+
+&size_m_transform {
+    col-offset = <7>;
+};
+
+&size_l_transform {
+    col-offset = <7>;
 };
