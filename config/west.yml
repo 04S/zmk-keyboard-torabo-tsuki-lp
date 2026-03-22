@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kot149
-      url-base: https://github.com/kot149
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: kot149
+      url-base: https://github.com/kot149
+    - name: ssbb
+      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,9 +17,6 @@ manifest:
       remote: sekigon-gonnoc
       import: west.yml
       revision: v0.2
-    - name: zmk-mouse-gesture
-      remote: kot149
-      revision: v1
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
       revision: main
@@ -30,5 +29,11 @@ manifest:
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
   self:
     path: config
