@@ -24,30 +24,3 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 
 #include "../../../config/keymap.keymap"
-
-&zip_mouse_gesture {
-    stroke-size = <300>;
-    enable-eager-mode;
-
-    gesture_back {
-        pattern = <3>; // 右
-        bindings = <&kp LA(LEFT)>;
-    };
-
-    gesture_forward {
-        pattern = <2>; // 左
-        bindings = <&kp LA(RIGHT)>;
-    };
-};
-
-/ {
-    keymap {
-        // インクルード先で定義されているレイヤー名を指定
-        layer_0 {
-            bindings = <
-                &mouse_gesture
-                // ... 必要なキー ...
-            >;
-        };
-    };
-};
