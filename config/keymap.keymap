@@ -57,8 +57,8 @@
             timeout-ms = <50>;
         };
 
-        C_Scroll_DELETE {
-            bindings = <&lt 5 DELETE>;
+        C_DELETE {
+            bindings = <&kp DELETE>;
             key-positions = <17 18>;
             timeout-ms = <50>;
         };
@@ -66,6 +66,12 @@
         C_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <16 18>;
+            timeout-ms = <50>;
+        };
+
+        C_mouse_gesture {
+            bindings = <&mouse_gesture>;
+            key-positions = <16 17 18>;
             timeout-ms = <50>;
         };
 
