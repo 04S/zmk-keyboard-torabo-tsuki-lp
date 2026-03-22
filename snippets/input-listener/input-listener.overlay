@@ -40,6 +40,6 @@
 
     mouse_gesture {
         layers = <2>;
-        bindings = <&mouse_gesture>;
+        bindings = <&zip_mouse_gesture>;
     };
 };
