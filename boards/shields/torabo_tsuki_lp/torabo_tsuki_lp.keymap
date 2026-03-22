@@ -28,7 +28,7 @@
 
 
 
-#include <zmk-listeners.dtsi>
+#include <zmk,layer-listeners.yaml>
 
 / {
     // スニペットが探している「受け皿」を定義
