@@ -37,4 +37,9 @@
         input-processors = <&zip_xy_scaler 1 20>,
                            <&zip_xy_to_scroll_mapper>;
     };
+
+    mouse_gesture {
+        layers = <2>;
+        bindings = <&mouse_gesture>;
+    };
 };
