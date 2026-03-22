@@ -6,7 +6,7 @@
 
     history_back {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LC(LG(RIGHT_ARROW));
+        bindings = <&kp LC(LG(RIGHT_ARROW))>;
     };
 
     history_forward {
