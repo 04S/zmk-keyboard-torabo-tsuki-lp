@@ -44,7 +44,7 @@
         // 必要に応じて上下などを追加
     };
 
-    keymap {
+    &keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
