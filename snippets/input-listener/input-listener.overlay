@@ -1,5 +1,6 @@
 #include <mouse-gesture.dtsi>
 
+// マウスジェスチャーbindings定義
 &zip_mouse_gesture {
     stroke-size = <100>; // Optional (default: 200)
     enable-eager-mode; // Optional, but recommended
@@ -26,12 +27,25 @@
     };
 };
 
+// AML除外定義
+&zip_temp_layer {
+    excluded-positions = <
+        7
+        16
+        17
+        18
+        28
+        29
+    >;
+};
+
 &pointing_listener {
     status = "okay";
     compatible = "zmk,input-listener";
     device = <&pointing_device>;
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-                        <&zip_mouse_gesture>;
+                        <&zip_temp_layer 5 10000>,    //AML用
+                        <&zip_mouse_gesture>;        //マウスジェスチャー用
     scroller {
         layers = <5>;
         input-processors = <&zip_xy_scaler 1 20>,
