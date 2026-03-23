@@ -33,14 +33,14 @@
             timeout-ms = <50>;
         };
 
-        C_ABC {
-            bindings = <&kp LANGUAGE_2>;
+        C_Double_BRACKET {
+            bindings = <&Double_BRACKET>;
             key-positions = <11 12>;
             timeout-ms = <50>;
         };
 
-        C_KANA {
-            bindings = <&kp LANGUAGE_1>;
+        C_Double_PAREN {
+            bindings = <&Double_PAREN>;
             key-positions = <12 13>;
             timeout-ms = <50>;
         };
@@ -81,12 +81,6 @@
             timeout-ms = <50>;
         };
 
-        C_Double_PAREN {
-            bindings = <&Double_PAREN>;
-            key-positions = <25 26>;
-            timeout-ms = <50>;
-        };
-
         C_HOME {
             bindings = <&kp HOME>;
             key-positions = <28 29>;
@@ -100,17 +94,24 @@
         };
 
         C_CAPSLOCK {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp LS(CAPSLOCK)>;
             key-positions = <37 38>;
             timeout-ms = <50>;
         };
     };
 
     macros {
+
+        Double_BRACKET: Double_BRACKET {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp JP_LBRACKET &kp JP_RBRACKET &kp LEFT_ARROW>;
+        };
+
         Double_PAREN: Double_PAREN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp LEFT_ARROW>;
+            bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
         };
     };
 
