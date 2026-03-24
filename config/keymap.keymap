@@ -10,81 +10,155 @@
         compatible = "zmk,combos";
 
         C_ESC {
-            bindings = <&kp ESCAPE>; key-positions = <1 2>; timeout-ms = <50>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+            timeout-ms = <50>;
         };
+
         C_DOUBLE_QUOTES {
-            bindings = <&kp LS(NUMBER_2)>; key-positions = <2 3>; timeout-ms = <50>;
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
         };
+
         C_AT {
-            bindings = <&kp JP_AT>; key-positions = <6 7>; timeout-ms = <50>;
+            bindings = <&kp JP_AT>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
         };
+
         C_UNDERSCORE {
-            bindings = <&kp JP_UNDERSCORE>; key-positions = <7 8>; timeout-ms = <50>;
+            bindings = <&kp JP_UNDERSCORE>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
         };
+
         C_Double_BRACKET {
-            bindings = <&Double_BRACKET>; key-positions = <11 12>; timeout-ms = <50>;
+            bindings = <&Double_BRACKET>;
+            key-positions = <11 12>;
+            timeout-ms = <50>;
         };
+
         C_Double_PAREN {
-            bindings = <&Double_PAREN>; key-positions = <12 13>; timeout-ms = <50>;
+            bindings = <&Double_PAREN>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
         };
+
         C_SPACE {
-            bindings = <&kp SPACE>; key-positions = <11 13>; timeout-ms = <50>;
+            bindings = <&kp SPACE>;
+            key-positions = <11 13>;
+            timeout-ms = <50>;
         };
+
         C_BACKSPACE {
-            bindings = <&kp BACKSPACE>; key-positions = <16 17>; timeout-ms = <50>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
         };
+
         C_DELETE {
-            bindings = <&kp DELETE>; key-positions = <17 18>; timeout-ms = <50>;
+            bindings = <&kp DELETE>;
+            key-positions = <17 18>;
+            timeout-ms = <50>;
         };
+
         C_ENTER {
-            bindings = <&kp ENTER>; key-positions = <16 18>; timeout-ms = <50>;
+            bindings = <&kp ENTER>;
+            key-positions = <16 18>;
+            timeout-ms = <50>;
         };
+
         C_CTL_Z {
-            bindings = <&kp LC(Z)>; key-positions = <21 22>; timeout-ms = <50>;
+            bindings = <&kp LC(Z)>;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
         };
+
         C_CTL_Y {
-            bindings = <&kp LC(Y)>; key-positions = <22 23>; timeout-ms = <50>;
+            bindings = <&kp LC(Y)>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
         };
+
         C_HOME {
-            bindings = <&kp HOME>; key-positions = <28 29>; timeout-ms = <50>;
+            bindings = <&kp HOME>;
+            key-positions = <28 29>;
+            timeout-ms = <50>;
         };
+
         C_END {
-            bindings = <&kp END >; key-positions = <29 30>; timeout-ms = <50>;
+            bindings = <&kp END >;
+            key-positions = <29 30>;
+            timeout-ms = <50>;
         };
+
         C_CAPSLOCK {
-            bindings = <&kp LS(CAPSLOCK)>; key-positions = <37 38>; timeout-ms = <50>;
+            bindings = <&kp LS(CAPSLOCK)>;
+            key-positions = <37 38>;
+            timeout-ms = <50>;
         };
 
         // Ctl組み合わせ
+
         C_CtlX {
-            bindings = <&kp LC(X)>; key-positions = <20 21>; timeout-ms = <50>;
+            bindings = <&kp LC(X)>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
         };
+
         C_CtlC {
-            bindings = <&kp LC(C)>; key-positions = <20 22>; timeout-ms = <50>;
+            bindings = <&kp LC(C)>;
+            key-positions = <20 22>;
+            timeout-ms = <50>;
         };
+
         C_CtlV {
-            bindings = <&kp LC(V)>; key-positions = <20 23>; timeout-ms = <50>;
+            bindings = <&kp LC(V)>;
+            key-positions = <20 23>;
+            timeout-ms = <50>;
         };
+
         C_CtlB {
-            bindings = <&kp LC(B)>; key-positions = <20 24>; timeout-ms = <50>;
+            bindings = <&kp LC(B)>;
+            key-positions = <20 24>;
+            timeout-ms = <50>;
         };
+
         C_CtlA {
-            bindings = <&kp LC(A)>; key-positions = <20 11>; timeout-ms = <50>;
+            bindings = <&kp LC(A)>;
+            key-positions = <20 11>;
+            timeout-ms = <50>;
         };
+
         C_CtlS {
-            bindings = <&kp LC(S)>; key-positions = <20 12>; timeout-ms = <50>;
+            bindings = <&kp LC(S)>;
+            key-positions = <20 12>;
+            timeout-ms = <50>;
         };
+
         C_CtlF {
-            bindings = <&kp LC(F)>; key-positions = <20 13>; timeout-ms = <50>;
+            bindings = <&kp LC(F)>;
+            key-positions = <20 13>;
+            timeout-ms = <50>;
         };
+
         C_CtlG {
-            bindings = <&kp LC(G)>; key-positions = <20 14>; timeout-ms = <50>;
+            bindings = <&kp LC(G)>;
+            key-positions = <20 14>;
+            timeout-ms = <50>;
         };
+
         C_CtlN {
-            bindings = <&kp LC(N)>; key-positions = <20 27>; timeout-ms = <50>;
+            bindings = <&kp LC(N)>;
+            key-positions = <20 27>;
+            timeout-ms = <50>;
         };
+
         C_CtlP {
-            bindings = <&kp LC(P)>; key-positions = <20 9>; timeout-ms = <50>;
+            bindings = <&kp LC(P)>;
+            key-positions = <20 9>;
+            timeout-ms = <50>;
         };
     };
 
@@ -137,11 +211,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans            &trans     &trans     &trans     &trans                     &trans     &trans             &trans          &trans           &trans  &trans
-&trans  &none             &none      &none      &none      &none                      &kp INS    &kp K_APPLICATION  &kp LG(LS(S))   &kp PRINTSCREEN  &none   &trans
-&trans  &none             &kp LC(A)  &kp LC(S)  &kp LC(F)  &kp LC(G)  &trans  &trans  &kp LC(P)  &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN    &none   &trans
-&trans  &kp LEFT_CONTROL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &none   &none   &kp LC(N)  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans            &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans             &trans          &trans           &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                     &trans     &trans             &trans          &trans           &trans     &trans
+&trans  &none   &none      &none      &none      &none                      &kp INS    &kp K_APPLICATION  &kp LG(LS(S))   &kp PRINTSCREEN  &kp LC(P)  &trans
+&trans  &none   &kp LC(A)  &kp LC(S)  &kp LC(F)  &kp LC(G)  &trans  &trans  &none      &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN    &none      &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &none   &none   &kp LC(N)  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
+&trans  &trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans             &trans          &trans           &trans     &trans
             >;
         };
 
