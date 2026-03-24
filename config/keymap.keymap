@@ -9,22 +9,16 @@
     combos {
         compatible = "zmk,combos";
 
-        C_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-            timeout-ms = <50>;
+        C_ESC { 
+            bindings = <&kp ESCAPE>; key-positions = <1 2>; timeout-ms = <50>;
         };
 
         C_DOUBLE_QUOTES {
-            bindings = <&kp LS(NUMBER_2)>;
-            key-positions = <2 3>;
-            timeout-ms = <50>;
+            bindings = <&kp LS(NUMBER_2)>; key-positions = <2 3>; timeout-ms = <50>;
         };
 
         C_AT {
-            bindings = <&kp JP_AT>;
-            key-positions = <6 7>;
-            timeout-ms = <50>;
+            bindings = <&kp JP_AT>; key-positions = <6 7>; timeout-ms = <50>;
         };
 
         C_UNDERSCORE {
