@@ -46,6 +46,6 @@
     };
     ZtoCTL {        // Z長押しでコントロール
         layers = <4>;
-        input-processors = <&kp LCTRL>;
+        bindings  = <&kp LCTRL>;
     };
 };
