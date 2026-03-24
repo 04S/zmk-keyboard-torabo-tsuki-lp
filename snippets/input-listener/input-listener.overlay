@@ -39,9 +39,13 @@
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                         <&zip_temp_layer 6 10000>,    // AML用
                         <&zip_mouse_gesture>;        // マウスジェスチャー用
-    scroller {
+    scroller {        // スクローラー用
         layers = <7>;
         input-processors = <&zip_xy_scaler 1 30>,
                            <&zip_xy_to_scroll_mapper>;
+    };
+    ZtoCTL {        // Z長押しでコントロール
+        layers = <4>;
+        input-processors = <&kp LCTRL>;
     };
 };
