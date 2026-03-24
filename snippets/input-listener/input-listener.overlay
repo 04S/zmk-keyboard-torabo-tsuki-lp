@@ -27,6 +27,10 @@
     };
 };
 
+&zip_ztoctl {
+    bindings  = <&kp LCTRL>;
+};
+
 &zip_temp_layer {
     excluded-positions = <6 7 16 17 28 29>;    // AML除外定義
     require-prior-idle-ms = <200>;           // AML誤爆防止
@@ -46,6 +50,6 @@
     };
     ZtoCTL {        // Z長押しでコントロール
         layers = <4>;
-        bindings  = <&kp LCTRL>;
+        input-processors = <&zip_ztoctl>;
     };
 };
