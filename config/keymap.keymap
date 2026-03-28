@@ -61,7 +61,6 @@
             bindings = <&kp DELETE>;
             key-positions = <17 18>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
         };
 
         C_ENTER {
@@ -160,13 +159,6 @@
             bindings = <&kp LC(P)>;
             key-positions = <20 9>;
             timeout-ms = <50>;
-        };
-
-        C_MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <17 18>;
-            timeout-ms = <50>;
-            layers = <6>;
         };
     };
 
