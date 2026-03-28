@@ -61,6 +61,7 @@
             bindings = <&kp DELETE>;
             key-positions = <17 18>;
             timeout-ms = <50>;
+            layers = <0 1 2 3>;
         };
 
         C_ENTER {
