@@ -211,11 +211,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                     &trans     &trans             &trans          &trans           &trans     &trans
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                  &kp INS    &kp K_APPLICATION  &kp LG(LS(S))   &kp PRINTSCREEN  &kp LC(P)  &trans
-&trans  &kp LC(D)  &kp LC(A)  &kp LC(S)  &kp LC(F)  &kp LC(G)  &trans  &trans  &none      &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN    &none      &trans
-&trans  &trans     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &none   &none   &kp LC(N)  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans             &trans          &trans           &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                        &trans   &trans             &trans          &trans           &trans     &trans
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                     &kp INS  &kp K_APPLICATION  &kp LG(LS(S))   &kp PRINTSCREEN  &kp LC(P)  &trans
+&trans  &kp LC(D)  &kp LC(A)  &kp LC(S)  &kp LC(F)  &kp LC(G)  &trans     &trans  &none    &kp PAGE_UP        &kp UP_ARROW    &kp PAGE_DOWN    &none      &trans
+&trans  &trans     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp LC(N)  &none   &none    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans     &trans  &trans   &trans             &trans          &trans           &trans     &trans
             >;
         };
 
