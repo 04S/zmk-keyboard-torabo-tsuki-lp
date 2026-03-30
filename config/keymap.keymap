@@ -47,7 +47,7 @@
 
         C_SPACE {
             bindings = <&kp SPACE>;
-            key-positions = <12 13>;
+            key-positions = <11 13>;
             timeout-ms = <50>;
         };
 
