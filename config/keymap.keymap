@@ -45,12 +45,6 @@
             timeout-ms = <50>;
         };
 
-        C_SPACE {
-            bindings = <&kp SPACE>;
-            key-positions = <11 13>;
-            timeout-ms = <50>;
-        };
-
         C_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
