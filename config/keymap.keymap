@@ -105,65 +105,9 @@
             timeout-ms = <50>;
         };
 
-        // Ctl組み合わせ
-
-        C_CtlX {
-            bindings = <&kp LC(X)>;
-            key-positions = <20 21>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlC {
-            bindings = <&kp LC(C)>;
-            key-positions = <20 22>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlV {
-            bindings = <&kp LC(V)>;
-            key-positions = <20 23>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlB {
-            bindings = <&kp LC(B)>;
-            key-positions = <20 24>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlA {
-            bindings = <&kp LC(A)>;
-            key-positions = <20 11>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlS {
-            bindings = <&kp LC(S)>;
-            key-positions = <20 12>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlF {
-            bindings = <&kp LC(F)>;
-            key-positions = <20 13>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlG {
-            bindings = <&kp LC(G)>;
-            key-positions = <20 14>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlN {
-            bindings = <&kp LC(N)>;
-            key-positions = <20 27>;
-            timeout-ms = <50>;
-        };
-
-        C_CtlP {
-            bindings = <&kp LC(P)>;
-            key-positions = <20 9>;
+        C_Double_DOUBLE_QUOTES {
+            bindings = <&Double_DOUBLE_QUOTES;
+            key-positions = <2 3 6 7>;
             timeout-ms = <50>;
         };
     };
@@ -179,6 +123,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
+        };
+
+        Double_DOUBLE_QUOTES: Double_DOUBLE_QUOTES {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT_ARROW>;
         };
     };
 
