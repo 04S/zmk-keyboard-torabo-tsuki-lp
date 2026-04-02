@@ -106,7 +106,7 @@
         };
 
         C_Double_DOUBLE_QUOTES {
-            bindings = <&Double_DOUBLE_QUOTES;
+            bindings = <&Double_DOUBLE_QUOTES>;
             key-positions = <2 3 6 7>;
             timeout-ms = <50>;
         };
