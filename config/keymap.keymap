@@ -105,6 +105,12 @@
             timeout-ms = <50>;
         };
 
+        C_Double_BRACE {
+            bindings = <&Double_BRACE>;
+            key-positions = <24 27>;
+            timeout-ms = <50>;
+        };
+
         C_Double_DOUBLE_QUOTES {
             bindings = <&Double_DOUBLE_QUOTES>;
             key-positions = <2 3 6 7>;
@@ -125,10 +131,16 @@
             bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
         };
 
-        Double_DOUBLE_QUOTES: Double_DOUBLE_QUOTES {
+        Double_PAREN: Double_PAREN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT_ARROW>;
+            bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
+        };
+
+        Double_BRACE: Double_BRACE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp JP_LBRACE &kp JP_RBRACE &kp LEFT_ARROW>;
         };
     };
 
