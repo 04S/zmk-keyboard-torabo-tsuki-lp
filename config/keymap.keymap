@@ -131,16 +131,16 @@
             bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
         };
 
-        Double_PAREN: Double_PAREN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp JP_LPAREN &kp JP_RPAREN &kp LEFT_ARROW>;
-        };
-
         Double_BRACE: Double_BRACE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp JP_LBRACE &kp JP_RBRACE &kp LEFT_ARROW>;
+        };
+
+        Double_DOUBLE_QUOTES: Double_DOUBLE_QUOTES {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT_ARROW>;
         };
     };
 
