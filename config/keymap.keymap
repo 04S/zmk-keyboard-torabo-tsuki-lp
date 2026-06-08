@@ -40,7 +40,7 @@
         };
 
         C_CAPSLOCK {
-            bindings = <&kp LS(CAPSLOCK)>;
+            bindings = <&kp CAPSLOCK>;
             key-positions = <12 13>;
             timeout-ms = <50>;
         };
