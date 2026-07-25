@@ -17,7 +17,3 @@
 &size_l_transform {
     col-offset = <7>;
 };
-
-&twi0 {
-    status = "disabled";
-};
