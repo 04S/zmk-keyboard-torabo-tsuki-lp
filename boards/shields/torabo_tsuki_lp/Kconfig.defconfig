@@ -16,7 +16,7 @@ config INPUT
 config ZMK_MOUSE
     default y
 
-// トラックパッド用
+# トラックパッド用
 config ZMK_POINTING
     default y
 
