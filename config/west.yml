@@ -30,5 +30,7 @@ manifest:
     - name: zmk-mouse-gesture
       remote: kot149
       revision: v1
+    - name: zmk-driver-iqs7211e
+      remote: sekigon-gonnoc
   self:
     path: config
