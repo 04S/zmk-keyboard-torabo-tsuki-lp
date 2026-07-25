@@ -17,3 +17,7 @@
 &size_l_transform {
     col-offset = <7>;
 };
+
+&i2c0 {
+    status = "disabled";
+};
