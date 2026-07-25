@@ -5,3 +5,7 @@
 &pointing_listener {
     status = "disabled";
 };
+
+&twi0 {
+    status = "disabled";
+};
