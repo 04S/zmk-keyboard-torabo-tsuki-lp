@@ -18,6 +18,6 @@
     col-offset = <7>;
 };
 
-&i2c0 {
+&i2c1 {
     status = "disabled";
 };
