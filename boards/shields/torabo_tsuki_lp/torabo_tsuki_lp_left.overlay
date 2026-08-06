@@ -9,3 +9,15 @@
 &i2c1 {
     status = "okey";
 };
+
+&size_s_transform {
+    col-offset = <5>;
+};
+
+&size_m_transform {
+    col-offset = <6>;
+};
+
+&size_l_transform {
+    col-offset = <7>;
+};
