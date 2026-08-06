@@ -7,7 +7,7 @@
 };
 
 &i2c1 {
-    status = "okey";
+    status = "okay";
 };
 
 &size_s_transform {
