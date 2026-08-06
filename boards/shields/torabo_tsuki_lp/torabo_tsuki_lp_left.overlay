@@ -5,3 +5,7 @@
 &pointing_listener {
     status = "disabled";
 };
+
+&i2c1 {
+    status = "okey";
+};
