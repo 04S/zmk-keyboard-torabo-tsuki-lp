@@ -16,11 +16,4 @@ config INPUT
 config ZMK_MOUSE
     default y
 
-# トラックパッド用
-config ZMK_POINTING
-    default y
-
-config IQS7211E
-    default y
-
 endif
